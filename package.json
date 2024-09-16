@@ -1,0 +1,28 @@
+{
+  "name": "simple-tab-rename",
+  "version": "1.0.0",
+  "description": "## Overview Simple Tab Rename is a Chrome extension that allows users to insert random strings into input fields on web pages.",
+  "main": "background.js",
+  "type": "module",
+  "scripts": {
+    "dev": "rollup -c --watch",
+    "build": "rollup -c",
+    "zip": "node zip.js",
+    "deploy": "npm run build && npm run zip"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com.sub:TakeruTakeru/simple-tab-rename.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "@rollup/plugin-terser": "^0.4.4",
+    "archiver": "^7.0.1",
+    "rollup": "^4.17.2",
+    "rollup-plugin-copy": "^3.5.0",
+    "rollup-plugin-css-only": "^4.5.2"
+  }
+}
